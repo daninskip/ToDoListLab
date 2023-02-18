@@ -1,0 +1,23 @@
+<div class="taskList">
+    <h3>TODO List</h3>
+    A place to store your todos
+    <ol>
+    <div *ngFor="let task of toDoList">
+    <li>
+        <button class="button-complete" *ngIf="task.complete == false" (click)="completeTask(task.name)">Complete</button> 
+        {{task.name}} 
+        <div class="x"><i class="fa-solid fa-xmark" (click)="removeTask(task.name)"></i></div>
+    
+    </li>
+    </div>
+    </ol>
+
+    <div *ngIf="toDoList.length == 0">No tasks to complete</div>
+<br>
+    <form #addTaskForm="ngForm" (ngSubmit)="addTask(addTaskForm)">
+        <input name="taskName" id="taskName" placeholder="Add your to-do task" ngModel>
+        <br>
+        <button class="button-add">Add</button>
+    </form>
+
+</div>

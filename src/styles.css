@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+    font-family:'Open Sans', sans-serif;
+    font-weight: 300;
+    background: linear-gradient(to right,#f857a6, #ff5858);
+
+    
+}
+
+.taskList{
+    background: #eee;
+    padding: 10px;
+    width: 60%;
+    box-shadow: 0px 0px 5px 0px;
+    margin:auto;
+
+    
+}
+
+.button-complete{
+    color:#ff1493;
+    border-color:#ff1493;
+    cursor: pointer;
+}
+
+.button-add{
+    background:#ff1493;
+    color:#eee;
+    border:0px;
+    width:100%;
+    cursor: pointer;
+}
+.x{
+    float:right;
+    cursor: pointer;
+
+}
